@@ -13,9 +13,14 @@ _A Numerical Framework for the Parameter Identification of the SIRD Model_ by An
 
 Jupyter notebooks with code for three sets of tests are included. 
 
-1. First, an exact test where the target is generated from solving the SIR model and the parameter identification problem aims to reconstruct the parameters used to build the target. The relevant notebooks are [`[Exact] GD.ipynb`](%5BExact%5D%20GD.ipynb), [`[Exact] FISTA.ipynb`](%5BExact%5D%20FISTA.ipynb), and [`[Exact] LM-BFGS.ipynb`](%5BExact%5D%20LM-BFGS.ipynb).
+1. First, an exact test where the target is generated from solving the SIR model and the parameter identification problem aims to reconstruct the parameters used to build the target. The relevant notebooks are [`[Exact] GD.ipynb`](%5BExact%5D%20GD.ipynb), [`[Exact] FISTA.ipynb`](%5BExact%5D%20FISTA.ipynb), [`[Exact] nmAPG.ipynb`](%5BExact%5D%20nmAPG.ipynb), and [`[Exact] LM-BFGS.ipynb`](%5BExact%5D%20LM-BFGS.ipynb).
 2. Second, a smooth target is generated and fitted using a regularised optimisation problem. The effects of the regularisation parameter are showcased with several tests. The relevant notebooks are [`[Regularisation] GD`](%5BRegularisation%5D%20GD.ipynb), [`[Regularisation] FISTA`](%5BRegularisation%5D%20FISTA.ipynb), and [`[Regularisation] LM-BFGS`](%5BRegularisation%5D%20LM-BFGS.ipynb).
-3. Third, robustness of the numerical approach is tested by sampling the target from a known smooth transformation of a solution from the SIRD model and fitted using a regularised problem with terminal costs. The effects of the resolution (i.e., number of sampling points) are showcased. The relevant notebooks are [`[Grid] GD`](%5BGrid%5D%20GD.ipynb), [`[Grid] FISTA`](%5BGrid%5D%20FISTA.ipynb), and [`[Grid] LM-BFGS`](%5BGrid%5D%20LM-BFGS.ipynb).
+3. Third, time-dependent fitting of Covid-19 data is tested with terminal costs. The relevant notebooks are [`[DD] GD`](%5BDD%5D%20PGD.ipynb), [`[Grid] FISTA`](%5BDD%5D%20FISTA.ipynb), [`[Grid] nmAPG`](%5BDD%5D%20nmAPG.ipynb),and [`[Grid] LM-BFGS`](%5BDD%5D%20LM-BFGS.ipynb). The data can be found in [`SEIRQV_files`](SEIRQV_files) from [`https://doi.org/10.1007/978-981-19-7222-5_42`](https://doi.org/10.1007/978-981-19-7222-5_42).
+
+
+Previous experiments (including the projection of a target to the ODE curves with respect to the regularisation parameter and mesh independence with oscillating data) are included in [`Two Additional Experiments`](Two%20Additional%20Experiments).
+
+---
 
 For better visualisation of the notebooks, the `codefolding` for Jupyter [extension](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/) is recommended.
 
